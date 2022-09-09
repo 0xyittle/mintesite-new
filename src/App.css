@@ -1,38 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Source+Sans+Pro&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Rubik";
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  overflow: hidden;
+}
+
+.overlay {
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.moving-background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+ /* background-image: url("./assets/background/BG.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 40% 40%;
+}
+
+.connect {
+  border: 2px solid red;
+  width:250px;
+  background-color:red;
+  border-radius:10px;
+  color:white;
+  font-size:20px;
+  font-family:Rubik;
+  padding:15px;
+  margin:0 15px;
+}
+
+.connect:hover {
+  background-color: black;
+}
+
+.mint {
+  border: 2px solid red;
+  /* background-color:red; */
+  width:250px;
+  border-radius:10px;
+  color:white;
+  font-size:20px;
+  font-family:Rubik;
+  padding:15px;
+  margin-top:20px;
+}
+.mint:hover {
+  background-color: black;
+}
+
+.increment {
+  width:60px;
+  height: 60px;
+  border: 2px solid red;
+  background-color:red;
+  border-radius:0px 15px 15px 0px;
+  color:white;
+  font-size:20px;
+  font-family:Rubik;
+  padding:15px;
+  margin-top:10px;
+
+}
+.increment:hover {
+  background-color: black;
+}
+
+.decrement {
+  width:60px;
+  height: 60px;
+  border: 2px solid red;
+  background-color:red;
+  border-radius:15px 0px 0px 15px;
+  color:white;
+  font-size:20px;
+  font-family:Rubik;
+  padding:15px;
+  margin-top:10px;
+
+}
+.decrement:hover {
+  background-color: black;
 }

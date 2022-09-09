@@ -11,6 +11,7 @@
 1. $ git clone {the url to the GitHub repo}
 2. $ npm install
 3. $ npm start
+
 DONE !
 
 
